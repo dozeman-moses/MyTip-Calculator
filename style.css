@@ -12,10 +12,16 @@ body {
 }
 
 /* header */
-#header {
+#header h1{
     text-align: center;
     background-color: hsl(185, 41%, 84%);
     padding: 3rem;
+}
+
+#header h1 span {
+    display: block;
+    font-size: 3rem;
+    color: hsl(172, 67%, 45%);
 }
 
 .container {
@@ -103,6 +109,7 @@ body {
     position: relative;
     left: 2rem;
     top: 0.3rem;
+    color: hsl(186, 14%, 43%);
 }
 
 #numPeople-section input {
