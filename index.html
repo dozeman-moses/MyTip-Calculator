@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- The Header-->
+    <header id="header">
+        <img src="../My Tip Calculator App/images/logo.svg" alt="Tip Calculator">
+    </header>
+
+    <!-- Section 1(Bill)-->
+    <div class="container">
+        <div class="row">
+            <section id="main-section">
+                <div class="bill-section">
+                    <h1>Bill</h1>
+                    <span class="dollar-sign">
+                        <img src="../My Tip Calculator App/images/icon-dollar.svg" alt="dollar sign">
+                    </span>
+                    <input type="number" id="bill-input">
+                </div>
+
+                <section id="tip-select-section">
+                    <h1>Select Tip %</h1>
+                    <div class="row-1">
+                        <div><button type="button" class="percent-btn tip-5">5%</button></div>
+                        <div><button type="button" class="percent-btn tip-10">10%</button></div>
+                    </div>
+
+                    <div class="row-1">
+                        <div><button type="button" class="percent-btn tip-15">15%</button></div>
+                        <div><button type="button" class="percent-btn tip-25">25%</button></div>
+                    </div>
+
+                    <div class="row-1">
+                        <div><button type="button" class="percent-btn tip-50">50%</button></div>
+                        <div><button type="button" class="percent-btn tip-100">100%</button></div>
+                    </div>
+
+                </section>
+
+                <!-- Section 1(Number of People)-->
+                <section id="numPeople-section">
+                    <div>
+                        <h1>Number of People</h1>
+                        <span class="people-sign">
+                            <img src="../My Tip Calculator App/images/icon-person.svg" alt="">
+                        </span>
+                        <input type="number" id="num-people">
+                    </div>
+                </section>
+            </section>
+        </div>
+
+
+
+        <!-- Section 1(DashBoard)-->
+        <div class="row">
+            <section id="dashboard-section">
+                <div class="dashboard-row">
+                    <div>
+                        <h1>Tip Amount</h1>
+                        <h2>/ person</h2>
+                    </div>
+                    <div>
+                        <h1 style="color: hsl(172, 67%, 45%);" class="tip-amount">$4.27</h1>
+                    </div>
+                </div>
+
+                <div class="dashboard-row">
+                    <div>
+                        <h1>Total</h1>
+                        <h2>/ person</h2>
+                    </div>
+                    <div>
+                        <h1 style="color: hsl(172, 67%, 45%);;" class="tip-total">$32.79</h1>
+                    </div>
+                </div>
+
+                <div class="reset-btn">
+                    <button type="button" id="btn-reset">RESET</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div style="margin-bottom: 200px;"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>

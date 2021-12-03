@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    font-size: 62.5%;
+    font-family: 'Space Mono', sans-serif;
+    line-height: 1.7;
+}
+
+/* header */
+#header {
+    text-align: center;
+    background-color: hsl(185, 41%, 84%);
+    padding: 3rem;
+}
+
+.container {
+    padding-left: 3rem;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Bill Section */
+#main-section {
+   margin-top: 5rem;
+}
+
+#main-section .bill-section {
+    font-size: 2rem;
+    color: hsl(186, 14%, 43%);
+}
+
+.dollar-sign {
+    position: relative;
+    left: 2rem;
+    top: 0.3rem;
+}
+
+#main-section .bill-section input {
+    padding: 1.9rem;
+    width: 90%;
+    margin-left: -2rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    outline-color: hsl(172, 67%, 45%);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Select Tip Section */
+#tip-select-section {
+    margin-top: 5rem;
+}
+
+#tip-select-section {
+    font-size: 2rem;  
+    color: hsl(186, 14%, 43%);  
+}
+
+.row-1 {
+    display: flex;
+}
+
+.row-1 button {
+    padding: 1rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    width: 20rem;
+    border: none;
+    border-radius: 1rem;
+    background-color:  hsl(183, 100%, 15%);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: hsl(0, 0%, 100%);
+    transition: all 1s;
+}
+
+.row-1 button:hover {
+    cursor: pointer;
+    background-color: hsl(172, 67%, 45%);
+}
+
+/* Number of People */
+#numPeople-section {
+    margin-top: 5rem;
+}
+
+#numPeople-section h1 {
+    font-size: 2rem;  
+    color: hsl(186, 14%, 43%);  
+}
+
+.people-sign {
+    position: relative;
+    left: 2rem;
+    top: 0.3rem;
+}
+
+#numPeople-section input {
+    padding: 1.9rem;
+    width: 90%;
+    margin-left: -2rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    outline-color: hsl(172, 67%, 45%);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Dashboard Section */
+#dashboard-section{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 2rem;
+    margin-top: 5rem;
+    margin-left: -2rem;
+}
+
+#dashboard-section h1 {
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%);
+}
+
+#dashboard-section h2 {
+    font-size: 2rem;
+    color: hsl(186, 14%, 43%);
+    font-weight: bold;
+}
+
+.dashboard-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.reset-btn button{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    margin-left: 9rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.4rem 1.6rem;
+    font-size: 1.9rem;
+    font-weight: bold;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    transition: all 1s;
+}
+
+.reset-btn button:hover {
+    background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+    html, 
+    body {
+        background-color: hsl(185, 41%, 84%);
+    }
+
+    .container {
+        width: 80%;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #dashboard-section {
+        width: 50rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+    .row-1 {
+        flex-direction: column;
+    }
+
+    .row-1 button {
+        width: 28rem;
+    }
+
+    #dashboard-section {
+        width: 32rem;
+    }
+
+    .reset-btn button {
+       margin-left: 6rem;
+    }
+}
+
