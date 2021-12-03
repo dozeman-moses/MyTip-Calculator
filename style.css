@@ -194,20 +194,28 @@ body {
     h2 {
         font-size: 1.4rem;
     }
+
+    #main-section .bill-section input {
+        width: 96%;
+    }
     .row-1 {
         flex-direction: column;
     }
 
     .row-1 button {
-        width: 28rem;
+        width: 31rem;
+    }
+
+    #numPeople-section input {
+        width: 96%;
     }
 
     #dashboard-section {
-        width: 32rem;
+        width: 34rem;
     }
 
     .reset-btn button {
-       margin-left: 6rem;
+       margin-left: 7rem;
     }
 }
 
